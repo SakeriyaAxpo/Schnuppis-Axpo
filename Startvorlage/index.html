@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meine Energie-Werkstatt</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="topbar"><img class="logo" src="axpo-logo.png" alt="Axpo" width="112" height="55"><span>ICT SCHNUPPERTAG<br>APPLIKATIONSENTWICKLUNG</span></div>
+
+<header>
+  <p class="eyebrow">Deine Energie-Werkstatt</p>
+  <!-- A2: Titel und Einleitung selbst formulieren. -->
+  <h1>Meine Energie-Werkstatt</h1><p>Hier steht später deine eigene Einleitung.</p>
+</header>
+<main>
+<section aria-labelledby="wissen-titel">
+  <h2 id="wissen-titel">Energie verstehen</h2>
+  <div class="karten">
+<article class="karte"><h3>Sonne</h3><p>Hier ergänzt du einen eigenen Infotext.</p></article>
+<!-- A2: Ergänze zwei weitere Karten. -->
+  </div>
+</section>
+<section aria-labelledby="quiz-titel">
+  <h2 id="quiz-titel">Teste dein Wissen</h2>
+  <p>Richtig = 1 Punkt. Falsch oder leer = 0 Punkte.</p>
+<div class="frage">
+  <label for="frage1">1. Welche Quelle liefert Energie für eine Solaranlage?</label>
+  <select id="frage1">
+    <option value="">Bitte auswählen</option>
+    <option value="falsch">Wind</option>
+    <option value="richtig">Sonne</option>
+    <option value="falsch">Wasser</option>
+  </select>
+</div>
+<div class="frage">
+  <label for="frage2">2. Welche Einheit steht für elektrische Energie?</label>
+  <select id="frage2">
+    <option value="">Bitte auswählen</option>
+    <option value="falsch">Volt</option>
+    <option value="falsch">Watt</option>
+    <option value="richtig">Kilowattstunde</option>
+  </select>
+</div>
+
+  <!-- A2: Hier Frage 3, 4 und 5 ergänzen. -->
+  <button id="auswerten" type="button">Auswerten</button>
+  <button id="neustart" type="button">Neu starten</button>
+  <p id="ergebnis" role="status" aria-live="polite">Noch nicht ausgewertet.</p>
+</section>
+</main>
+<footer><p>ICT-Schnuppertag · Informatiker/in EFZ Applikationsentwicklung · Übungsprojekt</p></footer>
+</body></html>
